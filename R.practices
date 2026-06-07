@@ -1,0 +1,43 @@
+#List & Data.frame
+
+movie <- c(name= c("the shining"))
+
+cast <- c("jack nicolson", "shelly duvall", "danny lioyd")
+
+score <- c("4.5", "4", "5")
+
+source <- c("IMDB", "IMDB","IMDB" )
+
+comment <- c("Brilliant", "Horror movie", "Masterpiece")
+
+reviews <- data.frame(casts= cast, scores= score, sources=source, comments= comment)
+
+movies <- list(movie, reviews)
+
+print(movies)
+
+year <- c(1980)
+
+movies[[3]] <- year
+
+names(movies) <- c("movie", "reviews", "year")
+
+#Matrix
+
+Harry <- matrix(data= c(474.5, 310.7, 380.3, 552.5, 338.7, 468.5), nrow = 3 ncol= 2) 
+rownames(Harry) <- c("h1", "h2", 'h3') 
+colnames(Harry) <- c("US", "NUS") 
+rowSums(Harry) 
+colSums(HArry) 
+print(Harry)
+
+# Divisible by 2 and 3
+
+x <- 6 
+if (x%% 2==0 && x %% 3== 0){ 
+  print ("X divisable by 2 and 3") 
+} else if (x %% 2 == 0){ 
+  print("X Divisable by 2") 
+} else if (x %% 3== 0){ 
+  print("X Divisable by 3") 
+}
